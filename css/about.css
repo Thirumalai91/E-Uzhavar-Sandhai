@@ -1,0 +1,153 @@
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #79d6ab;
+      color: #fff;
+      padding: 10px 20px;
+    }
+
+    .navbar-brand img{
+        width: 70px;
+        height: 50px;
+        align-items: center;
+    }
+
+    .navbar-nav {
+      display: flex;
+      list-style-type: none;
+    }
+
+    .nav-item {
+      margin-left: 20px;
+    }
+
+
+
+    .nav-link {
+      color: #000;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .navbar-toggler {
+      display: none;
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      font-size: 40px;
+      cursor: pointer;
+    }
+
+    /* Media query for responsive design */
+    @media (max-width: 490px) {
+      .navbar-nav {
+        display: none;
+      }
+
+      .navbar-toggler {
+        display: block;
+      }
+
+      .navbar-nav.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        top: 74px;
+        left: 0;
+        width: 100%;
+        background-color: #857e7e;
+        width: 100%;
+        
+      }
+      
+      .nav-item {
+        margin: 10px 0;
+      }
+    }
+    @media (min-width: 660px){
+        .nav-link{
+            font-size: 26px;
+        }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+section {
+    background-color: #f7f7f7;
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-weight: bold;
+    margin-top: 0;
+}
+.contact {
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(134, 243, 183, 0.1);
+    width: 100%;    
+    border-color: black;
+    border-radius: 20px;
+    max-width: 490px;
+}
+.contact .form{
+    margin-top: 5px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact label{
+    font-size: 20px;
+}
+.contact input {
+    min-width: 100px;
+    min-height: 40px;
+    box-shadow: #333;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.contact textarea{
+    min-width: 100px;
+    line-height: 50px;
+    box-shadow: #333;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #79d6ab;
+    color: #000000;
+    padding: 1em;
+    border: bold;
+    text-align: center;
+    clear: both;
+}
