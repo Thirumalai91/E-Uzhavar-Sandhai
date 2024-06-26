@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="navbar-brand">
+            <img src="/assets/img/logo.png" alt="logo" />
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="/html/Home_page_1.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/html/about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="/html/Contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="/html/add_cart.html" class="nav-link">Add cart</a>
+            </li>
+          </ul>
+          <button class="navbar-toggler">
+            <span class="navbar-toggler-icon">&#9776;</span>
+          </button>
+        </nav>
+      </header>
+    <div class="container">
+		<form class="form">
+			<h2><i class="fa fa-lock lock"></i>Sign Up</h2>
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <input type="text" placeholder="User Name" required>
+                        
+                        <div class="input-icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <input type="text" placeholder="Email" required>
+                       
+                        <div class="input-icon">
+                            <i class="fa fa-lock-open"></i>
+                        </div>
+                        <input type="password" placeholder="Password" required>
+                       
+                        <div class="input-icon">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                        <input type="password" placeholder="Confirm Password" required>
+                        
+                        <input type="submit" value="Sign Up">
+                      </div>
+                      <p>Already have an account? <a href="login.html">Log in</a></p>
+                      
+</form>
+</div>
+<script>
+  const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarNav = document.querySelector('.navbar-nav');
+
+    navbarToggler.addEventListener('click', () => {
+      navbarNav.classList.toggle('show');
+    });
+</script>
+</body>
+</html>

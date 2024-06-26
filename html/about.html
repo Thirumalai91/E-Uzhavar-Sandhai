@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="/css/about.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img src="/assets/img/logo.png" alt="logo" />
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="/html/Home_page_1.html" class="nav-link">Home</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a href="/html/about.html" class="nav-link">About</a>
+        </li> -->
+        <li class="nav-item">
+          <a href="/html/Contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="/html/add_cart.html" class="nav-link">Add cart</a>
+        </li>
+      </ul>
+      <button class="navbar-toggler">
+        <span class="navbar-toggler-icon">&#9776;</span>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section id="mission">
+        <h2>Mission Statement</h2>
+        <p>Our mission is to empower farmers and agricultural businesses to grow and thrive in a rapidly changing industry. We achieve this by providing innovative products and services that improve crop yields, reduce costs, and enhance sustainability.</p>
+    </section>
+    <section id="management">
+        <h2>Management Team</h2>
+        <ul>
+            <li>
+                <h3>John Smith, CEO</h3>
+                <p>John has over 15 years of experience in the agricultural industry and has led our company to become a leading player in the sector.</p>
+            </li>
+            <li>
+                <h3>Jane Doe, CTO</h3>
+                <p>Jane has a background in computer science and has developed innovative solutions for the agricultural industry.</p>
+            </li>
+            <li>
+                <h3>Bob Johnson, Operations Manager</h3>
+                <p>Bob has over 10 years of experience in agricultural operations and ensures that our products and services are delivered efficiently and effectively.</p>
+            </li>
+        </ul>
+    </section>
+    <section id="values">
+        <h2>Company Values</h2>
+        <ul>
+            <li>
+                <h3>Sustainability</h3>
+                <p>We believe that sustainable farming practices are essential for the long-term health of our planet and our industry.</p>
+            </li>
+            <li>
+                <h3>Quality</h3>
+                <p>We are dedicated to providing the highest-quality products and services to our customers.</p>
+            </li>
+            <li>
+                <h3>Customer Satisfaction</h3>
+                <p>We strive to deliver exceptional customer service and support to ensure our customers' success.</p>
+            </li>
+        </ul>
+    </section>
+    <section id="quality">
+        <h2>Quality and Certifications</h2>
+        <p>We are committed to quality and adhere to the highest standards of quality control. Our products and services are certified by ISO 9001, ensuring that they meet the highest standards of quality and safety.</p>
+    </section>
+    <!-- <section id="contact" class="contact">
+        <h2 class="h2">Contact Us</h2><br>
+        <form class="form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </section> -->
+</main>
+<footer>
+    <p>&copy;All rights reserved.</p>
+</footer>
+  <script>
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarNav = document.querySelector('.navbar-nav');
+
+    navbarToggler.addEventListener('click', () => {
+      navbarNav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
